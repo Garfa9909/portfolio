@@ -1,12 +1,7 @@
 html
 {
   background-color: black;
-}
-
-body 
-{
-  position: relative;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body::before 
