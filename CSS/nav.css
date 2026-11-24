@@ -70,7 +70,7 @@ nav
   {
     flex-wrap: wrap;
     padding: 1.5vh 3vw;
-    background-color: transparent;
+    background-color: black;
     backdrop-filter: blur(4px);
   }
 
