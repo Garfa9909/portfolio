@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Programming Languages",
+    "technologies": [
+      { "name": "Python", "img": "technologies/python.webp" },
+      { "name": "Java", "img": "technologies/java.webp" },
+      { "name": "C", "img": "technologies/c.png" },
+      { "name": "C++", "img": "technologies/c++.webp" },
+      { "name": "C#", "img": "technologies/csharp.webp" },
+      { "name": "JavaScript", "img": "technologies/js.png" },
+      { "name": "Kotlin", "img": "technologies/kotlin.webp" },
+      { "name": "Dart", "img": "technologies/dart.png" }
+    ]
+  },
+  {
+    "name": "Web Development",
+    "technologies": [
+      { "name": "HTML", "img": "technologies/html.webp" },
+      { "name": "CSS", "img": "technologies/css.webp" },
+      { "name": "PHP", "img": "technologies/php.webp" },
+      { "name": "React", "img": "technologies/react.webp" },
+      { "name": "Django", "img": "technologies/django.webp" }
+    ]
+  },
+  {
+    "name": "Databases",
+    "technologies": [
+      { "name": "SQL", "img": "technologies/sql.png" },
+      { "name": "MongoDB", "img": "technologies/mongodb.webp" },
+      { "name": "Redis", "img": "technologies/redis.png" },
+      { "name": "Neo4j", "img": "technologies/neo4j.png" }
+    ]
+  },
+  {
+    "name": "Data Analysis",
+    "technologies": [
+      { "name": "Pandas", "img": "technologies/pandas.png" },
+      { "name": "Apache Spark", "img": "technologies/spark.webp" }
+    ]
+  },
+  {
+    "name": "Backend, Cloud & Systems",
+    "technologies": [
+      { "name": "REST APIs", "img": "technologies/rest.png" },
+      { "name": "Spring Boot", "img": "technologies/springboot.png" },
+      { "name": "Apache Kafka", "img": "technologies/kafka.webp" },
+      { "name": "Docker", "img": "technologies/docker.webp" },
+      { "name": "AWS", "img": "technologies/aws.webp" },
+      { "name": "Linux", "img": "technologies/linux.webp" },
+      { "name": "Bash", "img": "technologies/bash.webp" },
+      { "name": "Git", "img": "technologies/git.webp" }
+    ]
+  },
+  {
+    "name": "Mobile Development",
+    "technologies": [
+      { "name": "Android Studio", "img": "technologies/androidstudio.webp" },
+      { "name": "Flutter", "img": "technologies/flutter.webp" }
+    ]
+  },
+  {
+    "name": "Game Development",
+    "technologies": [
+      { "name": "Unity", "img": "technologies/unity.png" }
+    ]
+  }
+]

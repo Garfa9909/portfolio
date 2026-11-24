@@ -1,0 +1,182 @@
+body 
+{
+  margin: 0;
+  min-height: 100vh;
+  background-color: #161d24; 
+  
+ 
+  background-image: 
+    linear-gradient(to right, rgba(140, 211, 255, 0.08) 0.12vw, transparent 0.12vw),
+    linear-gradient(to bottom, rgba(140, 211, 255, 0.08) 0.12vw, transparent 0.12vw),
+    linear-gradient(to right, rgba(140, 211, 255, 0.03) 0.08vw, transparent 0.08vw),
+    linear-gradient(to bottom, rgba(140, 211, 255, 0.03) 0.08vw, transparent 0.08vw);
+    
+  background-size: 4.8vw 4.8vw, 4.8vw 4.8vw, 1.2vw 1.2vw, 1.2vw 1.2vw;
+  background-attachment: fixed;
+}
+
+nav
+{
+  background-color: black;
+}
+
+
+.project-container 
+{
+  position: relative;
+  width: 90vw;
+  margin: 4vh auto;
+  padding: 3.5vh 3vw;
+  box-sizing: border-box;
+  
+  background: linear-gradient(180deg, #252525 0%, #333333 100%);
+  
+  clip-path: polygon(
+    0% 1.5vh, 1vw 0%, 
+    calc(100% - 1vw) 0%, 100% 1.5vh, 
+    100% calc(100% - 1.5vh), calc(100% - 1vw) 100%, 
+    1vw 100%, 0% calc(100% - 1.5vh)
+  );
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.8vh;
+}
+
+.project-container::before 
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #b8b8b8; 
+  
+  clip-path: polygon(
+    0% 1.5vh, 1vw 0%, calc(100% - 1vw) 0%, 100% 1.5vh,
+    100% calc(100% - 1.5vh), calc(100% - 1vw) 100%, 1vw 100%, 0% calc(100% - 1.5vh),
+    0% 1.5vh,
+
+    0.25vw calc(1.5vh + 0.1vw),
+    0.25vw calc(100% - 1.5vh - 0.1vw),
+    calc(1vw + 0.1vw) calc(100% - 0.25vw),
+    calc(100% - 1vw - 0.1vw) calc(100% - 0.25vw),
+    calc(100% - 0.25vw) calc(100% - 1.5vh - 0.1vw),
+    calc(100% - 0.25vw) calc(1.5vh + 0.1vw),
+    calc(100% - 1vw - 0.1vw) 0.25vw,
+    calc(1vw + 0.1vw) 0.25vw,
+    0.25vw calc(1.5vh + 0.1vw)
+  );
+}
+
+.project-title 
+{
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 185%;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  margin: 0;
+  padding: 1.2vh 1.5vw;
+  background: linear-gradient(90deg, #193b52 0%, #275878 65%, transparent 100%);
+  border-left: 0.4vw solid #8cd3ff;
+  text-shadow: 0.15vw 0.25vh 0 #111111;
+}
+
+.project-description 
+{
+  color: #e6e6e6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  line-height: 1.5;
+  margin: 0.5vh 0 1vh 0;
+  padding: 0 0.5vw;
+}
+
+.subtitle 
+{
+  color: #8cd3ff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 135%;
+  text-transform: uppercase;
+  letter-spacing: 0.08vw;
+  margin: 1vh 0 0.5vh 0;
+  border-bottom: 0.15vh solid #555555;
+  padding-bottom: 0.5vh;
+}
+
+
+.project-specs 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding-left: 0.5vw;
+}
+
+.spec 
+{
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 110%;
+  font-weight: normal;
+  margin: 0;
+  padding: 1vh 1.2vw;
+  background-color: rgba(20, 20, 20, 0.65);
+  border-left: 0.3vw solid #b8b8b8;
+}
+
+
+.spec::before 
+{
+  content: "▶ ";
+  color: #8cd3ff;
+  margin-right: 0.5vw;
+  font-size: 90%;
+}
+
+
+.project-stack 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  margin-top: 0.5vh;
+}
+
+.stack_tech 
+{
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 105%;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.8vh 1.4vw;
+  background: linear-gradient(125deg, #222222 0%, #222222 35%, #444444 36%, #444444 100%);
+  border: 0.12vw solid #b8b8b8;
+  text-shadow: 0.1vw 0.2vh 0 #111111;
+}
+
+
+.project-container a 
+{
+  align-self: flex-start;
+  margin-top: 1.5vh;
+  padding: 1.2vh 2.5vw;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: 0.18vw solid #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 115%;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.08vw;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.project-container a:hover 
+{
+  background-color: #275878;
+  border-color: #8cd3ff;
+  transform: translateY(-0.3vh);
+}

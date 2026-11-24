@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Restaurant Reservation Platform",
+    "description": "Distributed restaurant reservation platform built on a 4-microservice architecture using Java and Spring Boot. Developed as a collaborative academic project during an Erasmus+ exchange at Universidade Lusófona in Lisbon.",
+    "functionalities": [
+      "Decoupled core business domains into four independent microservices for modularity, scalability, and fault isolation",
+      "Synchronous request-response workflows via RESTful APIs",
+      "Asynchronous, event-driven inter-service messaging powered by Apache Kafka"
+    ],
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Apache Kafka",
+      "REST APIs",
+      "Git"
+    ],
+    "github": "https://github.com/DanielPeraltaLlamas/restaurant-reservation-microservices"
+  },
+  {
+    "name": "Lisbon Metro Mobile Application",
+    "description": "Cross-platform mobile application built in Flutter and Dart to explore Lisbon Metro stations, featuring an interactive map with real-time geolocation and full offline support.",
+    "functionalities": [
+      "Offline-first architecture using the Repository Pattern with automatic fallback from the official Metro Lisboa REST API to a local SQLite database",
+      "Interactive map displaying all Lisbon Metro stations alongside real-time device geolocation",
+      "Local service incident reporting and persistence across both online and offline sessions"
+    ],
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "SQL",
+      "REST APIs",
+      "Android Studio",
+      "Git"
+    ],
+    "github": "https://github.com/Garfa9909/Metro-Lisboa"
+  }
+]

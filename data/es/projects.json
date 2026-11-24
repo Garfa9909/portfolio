@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Plataforma de Reservas de Restaurantes",
+    "description": "Plataforma distribuida de reservas de restaurantes desarrollada sobre una arquitectura de 4 microservicios utilizando Java y Spring Boot. Proyecto académico colaborativo realizado durante mi intercambio Erasmus+ en la Universidade Lusófona de Lisboa.",
+    "functionalities": [
+      "Desacoplamiento de los dominios principales de negocio en cuatro microservicios independientes para garantizar modularidad, escalabilidad y aislamiento de fallos",
+      "Flujos de comunicación síncrona petición-respuesta mediante APIs RESTful",
+      "Mensajería asíncrona entre servicios orientada a eventos con Apache Kafka"
+    ],
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Apache Kafka",
+      "REST APIs",
+      "Git"
+    ],
+    "github": "https://github.com/DanielPeraltaLlamas/restaurant-reservation-microservices"
+  },
+  {
+    "name": "Aplicación Móvil del Metro de Lisboa",
+    "description": "Aplicación móvil multiplataforma desarrollada en Flutter y Dart para explorar las estaciones del Metro de Lisboa, con mapa interactivo, geolocalización en tiempo real y soporte completo sin conexión.",
+    "functionalities": [
+      "Arquitectura offline-first mediante el patrón Repository con respaldo automático desde la API REST oficial de Metro Lisboa hacia una base de datos local SQLite",
+      "Mapa interactivo con todas las estaciones del Metro de Lisboa junto con geolocalización del dispositivo en tiempo real",
+      "Registro y persistencia local de incidencias del servicio tanto en sesiones con conexión como sin conexión"
+    ],
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "SQL",
+      "REST APIs",
+      "Android Studio",
+      "Git"
+    ],
+    "github": "https://github.com/Garfa9909/Metro-Lisboa"
+  }
+]

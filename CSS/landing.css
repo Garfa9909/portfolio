@@ -1,0 +1,163 @@
+body 
+{
+  background-color: black; 
+  position: relative;
+  overflow-x: hidden; 
+}
+
+body::before 
+{
+  content: "";
+  position: fixed;
+  inset: -50%; 
+  z-index: -2;
+  background-color: #ffffff;
+  background-image: repeating-conic-gradient(
+    #cccccc 0% 25%, 
+    #ffffff 0% 50%
+  );
+  background-size: 1.5vw 1.5vw; 
+  transform: rotate(-15deg); 
+}
+
+body::after 
+{
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to top left,             
+    rgba(0, 0, 0, 0.4) 0%,      
+    rgba(0, 0, 0, 0.6) 10%, 
+    rgba(0, 0, 0, 0.7) 20%,  
+    #000000 60%,             
+    #000000 100%
+  );
+}
+
+#main-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:-5vh;
+}
+
+#foto
+{
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right:5vw;
+  width:30vw;
+  height:30vw;
+  border-radius: 15vw;
+  margin-top:15vh;
+}
+
+#links
+{
+  margin-left: 5vw;
+}
+
+#main-name
+{
+  color: #8cd3ff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top:15vh;
+  font-size: 400%;
+}
+
+#desc
+{
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 175%;
+  margin-bottom: 5vh;
+}
+
+.link
+{
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 125%;
+  margin-right: 3vw;
+}
+
+#mail
+{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+  color:#8cd3ff;
+  margin-top:3vh;
+}
+
+.link-interno
+{
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #8cd3ff;
+  font-size: 225%;
+}
+
+.link-interno:hover
+{
+  color: #22aaff;
+}
+
+@media (max-width: 768px)
+{
+  body::before
+  {
+    background-size: 4vw 4vw;
+  }
+
+  #main-container
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 0 6vw 5vh 6vw;
+  }
+
+  #links
+  {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #main-name
+  {
+    margin-top: 4vh;
+    font-size: 260%;
+  }
+
+  #desc
+  {
+    font-size: 130%;
+    margin-bottom: 3vh;
+  }
+
+  .link
+  {
+    font-size: 110%;
+    margin: 0 3vw;
+  }
+
+  .link-interno
+  {
+    font-size: 175%;
+  }
+
+  #foto
+  {
+    align-self: center;
+    margin-right: 0;
+    margin-top: 5vh;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 50%;
+  }
+}
+
