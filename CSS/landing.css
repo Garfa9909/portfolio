@@ -9,7 +9,10 @@ body::before
 {
   content: "";
   position: fixed;
-  inset: -50%; 
+  top: -50lvh;
+  left: -50vw;
+  width: 200vw;
+  height: 200lvh;
   z-index: -2;
   background-color: #ffffff;
   background-image: repeating-conic-gradient(
@@ -17,14 +20,18 @@ body::before
     #ffffff 0% 50%
   );
   background-size: 1.5vw 1.5vw; 
-  transform: rotate(-15deg); 
+  transform: rotate(-15deg);
+  will-change: transform;
 }
 
 body::after 
 {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100lvh;
   z-index: -1;
   background: linear-gradient(
     to top left,             
